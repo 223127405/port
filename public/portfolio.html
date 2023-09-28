@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Additional styles specific to this page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li button {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ARYAN ARORA     </h1>
+        <p>Objective:</p>
+        <p>
+                Seeking a challenging role in customer service that utilizes my technical knowledge and communication skills developed through my studies and previous experience. With a passion for providing exceptional customer service and a strong attention to detail, I am confident in my ability to effectively handle customer inquiries and complaints while working collaboratively with team members.
+            
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><button onclick="toggleView('home')">Home</button></li>
+            <li><button onclick="toggleView('about')">About</button></li>
+            <li><button onclick="toggleView('portfolio')">Portfolio</button></li>
+            <li><button onclick="toggleView('contact')">Contact</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Home View -->
+        <div id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Welcome to my portfolio homepage.</p>
+        </div>
+
+        <!-- About View -->
+        <div id="about" style="display: none;">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated and detail-oriented individual with a strong background in customer service and a passion for utilizing technology to enhance customer experiences. My studies and previous experiences have equipped me with excellent communication skills and the ability to effectively address customer inquiries and concerns. I am eager to contribute my technical knowledge and collaborative approach to create positive outcomes for both clients and the team.
+            </p>
+        </div>
+
+        <!-- Portfolio View -->
+        <div id="portfolio" style="display: none;">
+            
+        </div>
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <b>Bachelor of Information Technology</b><br />
+            Deakin University, Burwood<br />
+            March/2023 – Expected completion date: November 2025<br />
+            Achievements: #c, c++, Python, Java, Html
+          </li>
+          <li>
+            <b>DAV Public School</b><br />
+            Amritsar, India<br />
+            March/2019 – June/2022<br />
+           
+          </li>
+        </ul>
+    
+        <h2>Employment</h2>
+        <ul>
+          <li>
+            <b>TEAM MEMBER – Dench Bakery</b><br />
+            (April 2023 - Present)
+            <ul>
+              <li>Trained in packaging and labeling.</li>
+              <li>Specialized in training and mentoring new hires.</li>
+              <li>Managed the inventory.</li>
+              <li>Paid attention to detail and took feedback positively.</li>
+            </ul>
+          </li>
+    
+          <li>
+            <b>VOLUNTEER – SCHOOL EVENTS</b><br />
+            (2019 - 2022)
+            <ul>
+              <li>Assisted in organizing and running school events such as fundraisers, sports days, and cultural events.</li>
+              <li>Provided excellent customer service to event attendees and ensured their needs were met.</li>
+              <li>Demonstrated leadership skills by supervising and training a team of volunteers to ensure successful event execution.</li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div id="contact" style="display: none;">
+            Address: Melbourne, Australia<br>
+        Tel: 0478232218<br>
+        Email: aryanarora235rja@gmail.com<br>
+        LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank">https://www.linkedin.com/feed/</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 ARYAN ARORA
+    </footer>
+
+    <script>
+        function toggleView(view) {
+            const views = ['home', 'about', 'portfolio', 'contact'];
+            views.forEach(v => document.getElementById(v).style.display = v === view ? 'block' : 'none');
+        }
+    </script>
+</body>
+</html>
